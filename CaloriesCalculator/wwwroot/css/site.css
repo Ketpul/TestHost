@@ -1,0 +1,140 @@
+html {
+  font-size: 14px;
+}
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.container {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.search-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.search-section input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+    .suggestion-item:hover {
+        background-color: #e9e9e9;
+    }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul li {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+input[type="number"] {
+    margin-left: 10px;
+    padding: 5px;
+    width: 80px;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    button:hover {
+        background-color: #ff4500;
+    }
+
+#calculateCaloriesButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    #calculateCaloriesButton:hover {
+        background-color: #45a049;
+    }
+
+#startNewCalculationButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+    #startNewCalculationButton:hover {
+        background-color: #0056b3;
+    }
+

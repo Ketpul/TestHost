@@ -1,0 +1,137 @@
+﻿@model CaloriesCalculator.Models.Category
+
+@{
+    ViewData["Title"] = "CreateCategory";
+}
+
+<div class="main-container">
+    <h2>Създаване на категория</h2>
+    <form asp-action="CreateCategory" method="post" class="form">
+        <div class="form-group">
+            <label for="Name">Име на категорията</label>
+            <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Calories">Калории на категорията</label>
+            <input type="number" class="form-control" id="Calories" name="Calories" value="@Model.Calories" required />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Създай категория</button>
+        </div>
+    </form>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger mt-3">
+            <strong>Грешка!</strong>
+            @Html.ValidationSummary()
+        </div>
+    }
+</div>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1a2738, #121e2f);
+        font-family: 'Arial', sans-serif;
+        color: #ecf0f1;
+        text-align: center;
+    }
+
+
+    .main-container {
+        width: 90%;
+        max-width: 500px;
+        padding: 30px;
+        background-color: #1e2d3b;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+
+    .form-control {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 14px;
+        color: #34495e;
+        background-color: #ecf0f1;
+        border: none;
+        border-radius: 8px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s, transform 0.2s;
+    }
+
+        .form-control:focus {
+            outline: none;
+            box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+            transform: scale(1.02);
+        }
+
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, #2980b9, #1e6091);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .alert {
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        color: #e74c3c;
+        background-color: #fdecea;
+        border: 1px solid #f5c6cb;
+        text-align: center;
+    }
+
+        .alert strong {
+            font-weight: bold;
+        }
+
+</style>

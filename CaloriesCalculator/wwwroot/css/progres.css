@@ -1,0 +1,86 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.progress-bar {
+    background-color: #f3f3f3;
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    color:black
+}
+
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+
+
+.card {
+    margin-bottom: 20px;
+
+}
+
+.table > :not(:last-child) > :last-child > * {
+ 
+    color: black;
+}
+
+.input-group {
+    margin-top: 15px;
+}
+
+.progress-summary {
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: #28a745;
+    color: white;
+}
+
+    .btn-custom:hover {
+        background-color: #218838;
+    }
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.btn-warning {
+    margin-right: 10px;
+}
+
+.btn-info {
+    margin-right: 10px;
+}
+
+.edit-input {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.calorie-text {
+    margin-right: 10px;
+}
+
