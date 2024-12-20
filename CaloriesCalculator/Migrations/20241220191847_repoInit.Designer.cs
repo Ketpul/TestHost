@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaloriesCalculator.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241217184525_1")]
-    partial class _1
+    [Migration("20241220191847_repoInit")]
+    partial class repoInit
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CaloriesCalculator.Migrations
 {
     /// <inheritdoc />
-    public partial class RepoINIT : Migration
+    public partial class repoInit : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
